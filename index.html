@@ -10,29 +10,32 @@
 
   <header>
     <h1>
-      <img src="images/logo.svg" alt="Logo de Troc des Trains">
+      <img class="logo" src="images/logo.svg" alt="Troc des Trains">
     </h1>
     <nav>
       <a href="">Vends ton billet</a>
-      <img src="images/eye.svg" alt="Icone Accessibilité">
-      <img src="images/user_compte.svg" alt="Icone Compte Utilisateur">
-      <img src="images/shopping_basket.svg" alt="Icone Compte Panier">
+      <img src="images/eye.svg" alt="Accessibilité">
+      <img src="images/user_compte.svg" alt="Compte Utilisateur">
+      <img src="images/shopping_basket.svg" alt="Compte Panier">
     </nav>
   </header>
 
   <section class="welcome-research">
-        <h2>Salut,</h2>
-        <p>où souhaites-tu aller ?</p>
-        <p>Achètes et vends en toute sérénité !</p>
-        <form class="form">
+    <h3>
+      <p>Salut,</p>
+      <p>où souhaites-tu aller ?</p>
+      <p>Achètes et vends en toute sérénité !</p>
+    </h3>
+      <form class="form">
           <div>
-            <label class="label">Gare de départ *</label>
-            <input type="text" name="departure-gare" required>
+            <label for="departure-gare" class="label">Gare de départ *</label>
+            <input type="text" name="departure-gare" id="departure-gare" required>
           </div>
           <div>
             <label class="label">Gare de d'arrivée *</label>
             <input type="text" name="arrival-gare" required>
           </div>
+          <button><img src="images/swap_button.svg" alt="Echanger les gares"></button>
           <div>
             <label class="label">Date Aller</label>
             <input type="date" name="go-date" required>
@@ -47,7 +50,7 @@
           <div>
             <input type="submit" value="Je vends un billet">
           </div>
-        </form>
+      </form>
   </section>
 
   <section class="good-plans">
@@ -55,27 +58,27 @@
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Lille</p>
-      <p>Marseille</p>
+      <h3>Lille</h3>
+      <h3>Marseille</h3>
       <p>80€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Grenoble</p>
-      <p>Bordeaux</p>
+      <h3>Grenoble</h3>
+      <h3>Bordeaux</h3>
       <p>160€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Paris</p>
-      <p>Nantes</p>
+      <h3>Paris</h3>
+      <h3>Nantes</h3>
       <p>30€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Rennes</p>
-      <p>Vannes</p>
+      <h3>Rennes</h3>
+      <h3>Vannes</h3>
       <p>5€</p>
     </article>
   </section>
@@ -84,23 +87,23 @@
     <h2>Envie de partir ce week-end ?</h2>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Lyon</p>
+      <h3>Lyon</h3>
       <p>À partir de 30€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Paris</p>
+      <h3>Paris</h3>
       <p>À partir de 10€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Grenoble</p>
+      <h3>Grenoble</h3>
       <p>À partir de 40€</p>
     </article>
     <article>
       <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <p>Nantes</p>
+      <h3>Nantes</h3>
       <p>À partir de 20€</p>
     </article>
   </section>
@@ -152,7 +155,7 @@
   <section class="review">
     <article>
       <img src="images/jean.svg" alt="Photo de profil de Jean Paloz">
-      <p>Jean Paloz</p>
+      <h3>Jean Paloz</h3>
       <p>Novice</p>
       <p>3/5</p>
       <p>5 Avis</p>
@@ -161,7 +164,7 @@
       </article>
     <article>
     <img src="images/profil_flore.svg" alt="Photo de profil de Flore Farpa">
-    <p>Flore Farpa</p>
+    <h3>Flore Farpa</h3>
     <p>Ambassadrice</p>
     <p>4/5</p>
     <p>47 Avis</p>
@@ -170,7 +173,7 @@
     </article>
     <article>
       <img src="images/zoe.svg" alt="Photo de profil de Zoé Tradéré">
-      <p>Zoé Tradéré</p>
+      <h3>Zoé Tradéré</h3>
       <p>Confirmée</p>
       <p>4/5</p>
       <p>34 Avis</p>
@@ -185,7 +188,7 @@
   <section class="paiement">
     <img src="images/mastercard.svg" alt="Logo de Mastercard">
     <img src="images/visa.svg" alt="Logo de Visa">
-    <p>Paiement 100% sécurisé</p>
+    <h3>Paiement 100% sécurisé</h3>
     <img src="images/americain_express.svg" alt="Logo de Americain Express">
     <img src="images/paypal.svg" alt="Logo de Paypal">
   </section>
@@ -227,7 +230,7 @@
       <img src="images/google_play.svg" alt="Téléchargeable sur google play">
     </article>
     <article>
-    <img src="images/logo.svg" alt="Logo de Troc des Trains">
+    <img class="logo" src="images/logo.svg" alt="Logo de Troc des Trains">
     <p>© Troc des Trains 2021</p>
     </article>
   </footer>
