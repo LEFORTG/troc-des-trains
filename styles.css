@@ -1,42 +1,236 @@
 /*************************************************** RESET CSS */
 
-* {
-  padding: 0;
-  margin: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  vertical-align: baseline;
   box-sizing: border-box;
 }
-
-/*************************************************** BODY */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************** DECLARATION POLICE */
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-bold";
+    src:  url("fonts/raleway-bold.woff") format("woff");
+    font-weight: bold;
 }
 
+@font-face {
+  font-family: "Raleway-extrabold";
+    src:   url("fonts/raleway-extrabold.woff") format("woff");
+    font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Raleway-normal";
+    src:   url("fonts/raleway-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-light";
+    src:   url("fonts/raleway-light.woff") format("woff");
+    font-weight: lighter;
+}
+
+/*************************************************** GENERAL */
+
+body {
+  font-family: "Raleway-light";
+  background-color: #F3F3F3;
+}
+/************************* Background Color Yellow */
+
+input:focus ~ label, .submit-search {
+  background-color: #FCD924;
+}
 /*************************************************** HEADER */
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 56px;
+  box-shadow: 0px 4px 4px lightgrey;
+  background-color: white;
 }
 
 /************************* Titre h1 */
 
-
+header h1 {
+  display: flex;
+  width: 131px;
+  height: 17px;
+  margin-left: 20px;
+}
 
 /************************* Navigation */
 
+.sell-link, .eye {
+  display: none;
+}
+
+.shopping-basket {
+  margin: 0px 20px;
+}
+
+/*************************************************** MAIN */
+
+main {
+  margin: 0px 20px;
+}
+
+/************************* SECTION WELCOME RESEARCH */
 
 
-/*************************************************** SECTION WELCOME RESEARCH */
+/************************* Titre h3 */
 
-/************************* Article */
+h3 {
+  font-size: 24px;
+  margin-top: 50px;
+}
 
+strong {
+  font-family: "Raleway-extrabold";
+  font-size: 48px;
+}
 
+/************************* Bloquote */
+
+blockquote {
+  font-family: "Raleway-bold";
+  font-size: 18px;
+  text-align: center;
+  margin-top: 65px;
+}
 
 /************************* Form */
 
+.form {
+  margin: 42px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px lightgrey;
+  background-color: white;
+}
 
+.gare-date {
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px;
+}
 
-/*************************************************** SECTION GOOD PLANS */
+.champ {
+  position: relative;
+}
+
+input {
+  height: 34px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #F3F3F3;
+  background-color: #F3F3F3;
+}
+
+input:focus {
+  border: 1px solid #FCD924;
+}
+
+input:focus ~ label {
+  font-family: "Raleway-light";
+  font-size: 8px;
+  top: -9px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.gare input {
+  width: 130px;
+}
+
+.bottom-champ {
+  margin: 10px 0px 0px 0px;
+}
+
+.gare-date img{
+  width: 25px;
+  height: 25px;
+  margin: 30px 4px 0px 4px;
+}
+
+.date input {
+  width: 70px;
+}
+
+.label {
+  font-family: "Raleway-light";
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  pointer-events: none;
+}
+
+/************************* Submit Form */
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-form input {
+  width: 240px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.submit-search, .submit-sell {
+  font-family: "Raleway-extrabold";
+  font-size: 14px;
+  border: 1px solid #FCD924;
+}
+.submit-sell {
+  margin: 10px 0px 15px 0px;
+  background-color: #FFF;
+}
+
+/************************* SECTION GOOD PLANS */
 
 /************************* Titre h2 */
 
@@ -46,7 +240,7 @@ header {
 
 
 
-/*************************************************** SECTION WEEKEND */
+/************************* SECTION WEEKEND */
 
 /************************* Titre h2 */
 
@@ -56,7 +250,7 @@ header {
 
 
 
-/*************************************************** SECTION WORKS */
+/************************* SECTION WORKS */
 
 /************************* Titre h2 */
 
@@ -66,7 +260,7 @@ header {
 
 
 
-/*************************************************** SECTION REVIEW */
+/************************* SECTION REVIEW */
 
 /************************* Articles */
 
@@ -74,13 +268,13 @@ header {
 /************************* Div */
 
 
-/*************************************************** SECTION PAIEMENT */
+/************************* SECTION PAIEMENT */
 
 /*************************************************** FOOTER */
 
 /************************* Articles */
 
-/*************************************************** @MEDIA-QUERIES */
+/**************************************************************************** @MEDIA-QUERIES */
 
 /*************************************************** HEADER */
 
@@ -92,9 +286,9 @@ header {
 
 /************************* Navigation */
 
+/*************************************************** MAIN*/
 
-
-/*************************************************** SECTION WELCOME RESEARCH */
+/*************************SECTION WELCOME RESEARCH */
 
 /************************* Article */
 
@@ -104,7 +298,7 @@ header {
 
 
 
-/*************************************************** SECTION GOOD PLANS */
+/************************* SECTION GOOD PLANS */
 
 /************************* Titre h2 */
 
@@ -114,7 +308,7 @@ header {
 
 
 
-/*************************************************** SECTION WEEKEND */
+/************************* SECTION WEEKEND */
 
 /************************* Titre h2 */
 
@@ -124,7 +318,7 @@ header {
 
 
 
-/*************************************************** SECTION WORKS */
+/************************* SECTION WORKS */
 
 /************************* Titre h2 */
 
@@ -134,7 +328,7 @@ header {
 
 
 
-/*************************************************** SECTION REVIEW */
+/************************* SECTION REVIEW */
 
 /************************* Articles */
 
@@ -142,7 +336,7 @@ header {
 /************************* Div */
 
 
-/*************************************************** SECTION PAIEMENT */
+/*************************SECTION PAIEMENT */
 
 /*************************************************** FOOTER */
 

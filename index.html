@@ -1,238 +1,259 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Troc des Trains - Billets d'occasions</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troc des Trains - Billets d'occasions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <header>
+      <h1>
+        <img class="logo" src="images/logo.svg" alt="Troc des Trains" />
+      </h1>
+      <nav>
+        <a class="sell-link" href="">Vends ton billet</a>
+        <img class="eye" src="images/eye.svg" alt="Accessibilité" />
+        <img class="nav-img user-compte" src="images/user_compte.svg" alt="Compte Utilisateur" />
+        <img class="nav-img shopping-basket" src="images/shopping_basket.svg" alt="Compte Panier" />
+      </nav>
+    </header>
 
-  <header>
-    <h1>
-      <img class="logo" src="images/logo.svg" alt="Troc des Trains">
-    </h1>
-    <nav>
-      <a href="">Vends ton billet</a>
-      <img src="images/eye.svg" alt="Accessibilité">
-      <img src="images/user_compte.svg" alt="Compte Utilisateur">
-      <img src="images/shopping_basket.svg" alt="Compte Panier">
-    </nav>
-  </header>
+    <main>
+      <section class="welcome-research">
+        <h3>
+          <strong>Salut,</strong> <br>où souhaites-tu aller ?
+        </h3>
+        <blockquote>Achètes et vends en toute sérénité !</blockquote>
+        <form class="form">
+          <div class="gare-date">
+            <div class="gare">
+              <div class="champ">
+                <input type="text" name="departure-gare" id="departure-gare" />
+                <label class="label" for="departure-gare">Gare de départ </label>
+              </div>
+              <div class="champ bottom-champ">
+                <input type="text" name="arrival-gare" id="arrival-gare" />
+                <label class="label" for="arrival-gare">Gare d'arrivée </label>
+              </div>
+            </div>
+              <img src="images/swap_button.svg" alt="Echanger les gares" />
+            <div class="date">
+              <div class="champ">
+                <input type="date" name="go-date" id="go-date" />
+                <label class="label" for="go-date">Date Aller</label>
+              </div>
+              <div class="champ bottom-champ">
+                <input type="date" name="back-date" id="back-date" />
+                <label class="label" for="back-date">Date Retour</label>
+              </div>
+            </div>
+          </div>
+          <div class="submit-form">
+            <input class="submit-search" type="submit" value="Je recherche" />
+            <input class="submit-sell" type="submit" value="Je vends un billet" />
+          </div>
+        </form>
+      </section>
 
-  <section class="welcome-research">
-    <h3>
-      Salut,
-      où souhaites-tu aller ?
-      Achètes et vends en toute sérénité !
-    </h3>
-      <form class="form">
-          <div>
-            <label for="departure-gare" class="label">Gare de départ *</label>
-            <input type="text" name="departure-gare" id="departure-gare" required>
-          </div>
-          <div>
-            <label class="label">Gare de d'arrivée *</label>
-            <input type="text" name="arrival-gare" required>
-          </div>
-          <button><img src="images/swap_button.svg" alt="Echanger les gares"></button>
-          <div>
-            <label class="label">Date Aller</label>
-            <input type="date" name="go-date" required>
-          </div>
-          <div>
-            <label class="label">Date Retour</label>
-            <input type="date" name="back-date" required>
-          </div>
-          <div>
-            <input type="submit" value="Je recherche">
-          </div>
-          <div>
-            <input type="submit" value="Je vends un billet">
-          </div>
-      </form>
-  </section>
+      <section class="good-plans">
+        <h2>Bons plan du moment</h2>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Lille</h3>
+          <h3>Marseille</h3>
+          <p>80€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Grenoble</h3>
+          <h3>Bordeaux</h3>
+          <p>160€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Paris</h3>
+          <h3>Nantes</h3>
+          <p>30€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Rennes</h3>
+          <h3>Vannes</h3>
+          <p>5€</p>
+        </article>
+      </section>
 
-  <section class="good-plans">
-    <h2>Bons plan du moment</h2>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Lille</h3>
-      <h3>Marseille</h3>
-      <p>80€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Grenoble</h3>
-      <h3>Bordeaux</h3>
-      <p>160€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Paris</h3>
-      <h3>Nantes</h3>
-      <p>30€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Rennes</h3>
-      <h3>Vannes</h3>
-      <p>5€</p>
-    </article>
-  </section>
+      <section class="weekend">
+        <h2>Envie de partir ce week-end ?</h2>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Lyon</h3>
+          <p>À partir de 30€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Paris</h3>
+          <p>À partir de 10€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Grenoble</h3>
+          <p>À partir de 40€</p>
+        </article>
+        <article>
+          <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+          <h3>Nantes</h3>
+          <p>À partir de 20€</p>
+        </article>
+      </section>
 
-  <section class="weekend">
-    <h2>Envie de partir ce week-end ?</h2>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Lyon</h3>
-      <p>À partir de 30€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Paris</h3>
-      <p>À partir de 10€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Grenoble</h3>
-      <p>À partir de 40€</p>
-    </article>
-    <article>
-      <img src="images/white_human.svg" alt="Bonhomme Blanc">
-      <h3>Nantes</h3>
-      <p>À partir de 20€</p>
-    </article>
-  </section>
+      <section class="works">
+        <h2>Comment ça fonctionne ?</h2>
+        <article>
+          <h3>J'achète</h3>
+          <ol>
+            <li>Je recherche</li>
+            <li>Je trouve mon billet</li>
+            <li>Je checkes les avis du vendeur</li>
+            <li>Je paye et reçoit immédiatement mon billet</li>
+          </ol>
+          <img src="images/buy.svg" alt="Bonhomme qui vend" />
+        </article>
+        <article>
+          <h3>Je vends</h3>
+          <ol>
+            <li>Je télécharge le billet sur l'application</li>
+            <li>Je fixe le prix</li>
+            <li>J'enregistre mes coordonnées bancaires</li>
+            <li>Je reçoit l'argent dès que le billet est vendu</li>
+          </ol>
+          <img src="images/sell.svg" alt="Bonhommes qui conclue un marché" />
+        </article>
+        <article>
+          <h3>Je donne mon avis</h3>
+          <ol>
+            <li>Pour rassurer les prochains acheteurs</li>
+            <li>Pour avoir une bonne réputation</li>
+            <li>Pour améliorer votre site</li>
+            <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
+          </ol>
+          <img src="images/give_review.svg" alt="Bonhomme qui écrit" />
+        </article>
+        <article>
+          <h3>Qui payes les frais ?</h3>
+          <ol>
+            <li>Prix de vente du billet 30€</li>
+            <li>Le vendeur reçoit 29€</li>
+            <li>L'acheteur paye 31€</li>
+            <li>Troc des Trains reçoit 2€</li>
+          </ol>
+          <img src="images/fees.svg" alt="Bonhomme avec un chèque" />
+        </article>
+      </section>
 
-  <section class="works">
-    <h2>Comment ça fonctionne ?</h2>
-    <article>
-      <h3>J'achète</h3>
-      <ol>
-        <li>Je recherche</li>
-        <li>Je trouve mon billet</li>
-        <li>Je checkes les avis du vendeur</li>
-        <li>Je paye et reçoit immédiatement mon billet</li>
-      </ol>
-      <img src="images/buy.svg" alt="Bonhomme qui vend">
-    </article>
-    <article>
-      <h3>Je vends</h3>
-      <ol>
-        <li>Je télécharge le billet sur l'application</li>
-        <li>Je fixe le prix</li>
-        <li>J'enregistre mes coordonnées bancaires</li>
-        <li>Je reçoit l'argent dès que le billet est vendu</li>
-      </ol>
-      <img src="images/sell.svg" alt="Bonhommes qui conclue un marché">
-    </article>
-    <article>
-      <h3>Je donne mon avis</h3>
-      <ol>
-        <li>Pour rassurer les prochains acheteurs</li>
-        <li>Pour avoir une bonne réputation</li>
-        <li>Pour améliorer votre site</li>
-        <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
-      </ol>
-      <img src="images/give_review.svg" alt="Bonhomme qui écrit">
-    </article>
-    <article>
-      <h3>Qui payes les frais ?</h3>
-      <ol>
-        <li>Prix de vente du billet 30€</li>
-        <li>Le vendeur reçoit 29€</li>
-        <li>L'acheteur paye 31€</li>
-        <li>Troc des Trains reçoit 2€</li>
-      </ol>
-      <img src="images/fees.svg" alt="Bonhomme avec un chèque">
-    </article>
-  </section>
-
-  <div class="review">
-    <article>
-      <img src="images/jean.svg" alt="Photo de profil de Jean Paloz">
-      <h3>Jean Paloz</h3>
-      <p>Novice</p>
-      <p>3/5</p>
-      <p>5 Avis</p>
-      <p>Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce système d'alerte !</p>
-      <p>Il y a une semaine...</p>
-    </article>
-    <article>
-      <img src="images/profil_flore.svg" alt="Photo de profil de Flore Farpa">
-      <h3>Flore Farpa</h3>
-      <p>Ambassadrice</p>
-      <p>4/5</p>
-      <p>47 Avis</p>
-      <p>J'ai achetée mon billet rapidement et sans problèmes ! Vraiment super le mode paiement, je recommande Troc des Trains !</p>
-      <p>Il y a 3 jours...</p>
-    </article>
-    <article>
-      <img src="images/zoe.svg" alt="Photo de profil de Zoé Tradéré">
-      <h3>Zoé Tradéré</h3>
-      <p>Confirmée</p>
-      <p>4/5</p>
-      <p>34 Avis</p>
-      <p>Après plus de 20 transactions, j'écris ce commentaire car je ne me sépare plus de Troc des Trains pour mes voyages en amoureux le week-end !</p>
-      <p>Il y a 3 jours...</p>
-    </article>
-      <div>
-        <img src="images/back_to_top.svg" alt="Retour en haut de la page">
+      <div class="review">
+        <article>
+          <img src="images/jean.svg" alt="Photo de profil de Jean Paloz" />
+          <h3>Jean Paloz</h3>
+          <p>Novice</p>
+          <p>3/5</p>
+          <p>5 Avis</p>
+          <p>
+            Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce système
+            d'alerte !
+          </p>
+          <p>Il y a une semaine...</p>
+        </article>
+        <article>
+          <img
+            src="images/profil_flore.svg"
+            alt="Photo de profil de Flore Farpa"
+          />
+          <h3>Flore Farpa</h3>
+          <p>Ambassadrice</p>
+          <p>4/5</p>
+          <p>47 Avis</p>
+          <p>
+            J'ai achetée mon billet rapidement et sans problèmes ! Vraiment super
+            le mode paiement, je recommande Troc des Trains !
+          </p>
+          <p>Il y a 3 jours...</p>
+        </article>
+        <article>
+          <img src="images/zoe.svg" alt="Photo de profil de Zoé Tradéré" />
+          <h3>Zoé Tradéré</h3>
+          <p>Confirmée</p>
+          <p>4/5</p>
+          <p>34 Avis</p>
+          <p>
+            Après plus de 20 transactions, j'écris ce commentaire car je ne me
+            sépare plus de Troc des Trains pour mes voyages en amoureux le
+            week-end !
+          </p>
+          <p>Il y a 3 jours...</p>
+        </article>
+        <div>
+          <img src="images/back_to_top.svg" alt="Retour en haut de la page" />
+        </div>
       </div>
-  </div>
 
-  <section class="paiement">
-    <img src="images/mastercard.svg" alt="Mastercard">
-    <img src="images/visa.svg" alt="Visa">
-    <h3>Paiement 100% sécurisé</h3>
-    <img src="images/americain_express.svg" alt="Americain Express">
-    <img src="images/paypal.svg" alt="Paypal">
-  </section>
+      <section class="paiement">
+        <img src="images/mastercard.svg" alt="Mastercard" />
+        <img src="images/visa.svg" alt="Visa" />
+        <h3>Paiement 100% sécurisé</h3>
+        <img src="images/americain_express.svg" alt="Americain Express" />
+        <img src="images/paypal.svg" alt="Paypal" />
+      </section>
 
-  <footer>
-    <article>
-      <h4>L'entreprise</h4>
-      <ul>
-        <li>Qui sommes-nous ?</li>
-        <li>Nous rejoindre</li>
-      </ul>
-    </article>
-    <article>
-      <h4>Informations légales</h4>
-      <ul>
-        <li>Chartes</li>
-        <li>Conditions générales de ventes</li>
-        <li>Règlement Européen</li>
-      </ul>
-    </article>
-    <article>
-      <h4>Un problème ?</h4>
-      <ul>
-        <li>Service clientèle 24/7</li>
-        <li>FAQ</li>
-      </ul>
-    </article>
-    <article>
-    <h4>Suis-nous !</h4>
-    <div>
-      <img src="images/facebook.svg" alt="Facebook">
-      <img src="images/instagram.svg" alt="Instagram">
-      <img src="images/twitter.svg" alt="Twitter">
-    </div>
-    </article>
-    <article>
-      <h4>Télécharge l'appli</h4>
-      <img src="images/appstore.svg" alt="Disponible sur l'appstore">
-      <img src="images/google_play.svg" alt="Téléchargeable sur google play">
-    </article>
-    <article>
-    <img class="logo" src="images/logo.svg" alt="Troc des Trains">
-    <h5>© Troc des Trains 2021</h5>
-    </article>
-  </footer>
-</body>
+      <footer>
+        <article>
+          <h4>L'entreprise</h4>
+          <ul>
+            <li>Qui sommes-nous ?</li>
+            <li>Nous rejoindre</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Informations légales</h4>
+          <ul>
+            <li>Chartes</li>
+            <li>Conditions générales de ventes</li>
+            <li>Règlement Européen</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Un problème ?</h4>
+          <ul>
+            <li>Service clientèle 24/7</li>
+            <li>FAQ</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Suis-nous !</h4>
+          <div>
+            <img src="images/facebook.svg" alt="Facebook" />
+            <img src="images/instagram.svg" alt="Instagram" />
+            <img src="images/twitter.svg" alt="Twitter" />
+          </div>
+        </article>
+        <article>
+          <h4>Télécharge l'appli</h4>
+          <img src="images/appstore.svg" alt="Disponible sur l'appstore" />
+          <img
+            src="images/google_play.svg"
+            alt="Téléchargeable sur google play"
+          />
+        </article>
+        <article>
+          <img class="logo" src="images/logo.svg" alt="Troc des Trains" />
+          <h5>© Troc des Trains 2021</h5>
+        </article>
+      </footer>
+    </main>
+  </body>
 </html>
