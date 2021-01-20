@@ -1,81 +1,163 @@
 /*************************************************** RESET CSS */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*************************************************** DECLARATION POLICE */
 
 @font-face {
   font-family: "Raleway-bold";
-    src:  url("fonts/raleway-bold.woff") format("woff");
+  src: url("fonts/raleway-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway-extrabold";
-    src:   url("fonts/raleway-extrabold.woff") format("woff");
+  src: url("fonts/raleway-extrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway-normal";
-    src:   url("fonts/raleway-regular.woff") format("woff");
+  src: url("fonts/raleway-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway-light";
-    src:   url("fonts/raleway-light.woff") format("woff");
+  src: url("fonts/raleway-light.woff") format("woff");
 }
 
 /*************************************************** GENERAL */
 
 body {
   font-family: "Raleway-light";
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 /************************* Background Color Yellow */
 
-input:focus ~ label, .submit-search {
-  background-color: #FCD924;
+input:focus ~ label,
+.submit-search{
+  background-color: #fcd924;
 }
 
 /************************* Title */
@@ -99,9 +181,18 @@ h3 {
 
 h4 {
   font-family: "Raleway-bold";
+  font-size: 24px;
+}
+
+h5 {
   font-size: 18px;
 }
 
+/************************* li */
+
+li {
+  font-size: 14px;
+}
 
 /*************************************************** HEADER */
 
@@ -117,7 +208,8 @@ header {
 
 /************************* Navigation */
 
-.sell-link, .eye {
+.sell-link,
+.eye {
   display: none;
 }
 
@@ -174,19 +266,25 @@ blockquote {
   height: 34px;
   outline: none;
   border-radius: 4px;
-  border: 1px solid #F3F3F3;
-  background-color: #F3F3F3;
+  border: 1px solid #f3f3f3;
+  background-color: #f3f3f3;
 }
 
-.gare-date input:focus, .submit-form input {
-  border: 1px solid #FCD924;
+.gare-date input:focus,
+.submit-form input {
+  border: 1px solid #fcd924;
 }
 
-input:focus ~ label {
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
   font-size: 8px;
   top: -9px;
   padding: 5px;
   border-radius: 4px;
+}
+
+::placeholder {
+  color: transparent;
 }
 
 .gare input {
@@ -197,7 +295,7 @@ input:focus ~ label {
   margin: 10px 0px 0px 0px;
 }
 
-.gare-date img{
+.gare-date img {
   width: 25px;
   height: 25px;
   margin: 30px 4px 0px 4px;
@@ -208,7 +306,6 @@ input:focus ~ label {
 }
 
 .label {
-
   font-size: 12px;
   position: absolute;
   top: 12px;
@@ -230,22 +327,27 @@ input:focus ~ label {
   border-radius: 4px;
 }
 
-.submit-search, .submit-sell {
+.submit-search,
+.submit-sell {
   font-family: "Raleway-extrabold";
   font-size: 14px;
 }
 .submit-sell {
   margin: 10px 0px 15px 0px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-/************************* SECTION GOOD PLANS */
+/************************* SECTION GOOD PLANS / WEEKEND */
 
-.good-plans {
+.good-plans,
+.weekend {
   margin-bottom: 42px;
 }
 
-.good-plans article {
+.good-plans article,
+.weekend article {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   height: 280px;
   border-radius: 8px;
@@ -254,67 +356,136 @@ input:focus ~ label {
   box-shadow: 0px 4px 4px lightgray;
 }
 
-.good-plans p {
+.good-plans p,
+.weekend p {
   font-family: "Raleway-extrabold";
   font-size: 24px;
 }
 
-.good-plans p strong {
+.good-plans p strong,
+.weekend p strong {
   font-size: 14px;
 }
+
 /************************* Articles */
 
-.gp-article-one, .gp-article-two, .gp-article-four {
+.gp-article-one,
+.gp-article-two,
+.gp-article-four,
+.wk-article-one,
+.wk-article-three,
+.wk-article-four {
   display: none;
 }
 
+.gp-article-one {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/marseille.webp");
+}
+
+.gp-article-two {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/bordeaux.webp");
+}
+
 .gp-article-three {
-  background-image:
-  linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-  url('images/nantes_good_plans.svg');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/nantes_good_plans.webp");
+}
+
+.gp-article-four {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/vannes.webp");
 }
 
 .img-time {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 18px;
-  color: #FFF;
+  font-size: 24px;
+  color: #fff;
 }
 
-.title-four-paragraph {
+
+.gp-hfour-p,
+.wk-hfour-p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFF;
+  color: #fff;
+  margin: auto;
+  position: relative;
+  top: -10px;
 }
 
+.wk-article-one {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/lyon.webp");
+}
 
-/************************* SECTION WEEKEND */
+.wk-article-two {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/paris.webp");
+}
 
+.wk-article-three {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/grenoble.webp");
+}
 
+.wk-article-four {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/nantes_weekend.webp");
+}
 
+/************************* SECTION WORK */
 
-/************************* Articles */
+.works {
+  width: 100vw;
+  background-color: rgba(252, 217, 36, 0.5);
+}
 
-
-
-/************************* SECTION WORKS */
-
-
-
-
-/************************* Articles */
-
-
+.works h2 {
+  margin: 28px 0px;
+}
 
 /************************* SECTION REVIEW */
 
 /************************* Articles */
 
-
 /************************* Div */
-
 
 /************************* SECTION PAIEMENT */
 

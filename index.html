@@ -30,22 +30,22 @@
           <div class="gare-date">
             <div class="gare">
               <div class="champ">
-                <input type="text" name="departure-gare" id="departure-gare" />
+                <input type="text" name="departure-gare" id="departure-gare" placeholder="Gare de départ" />
                 <label class="label" for="departure-gare">Gare de départ </label>
               </div>
               <div class="champ bottom-champ">
-                <input type="text" name="arrival-gare" id="arrival-gare" />
+                <input type="text" name="arrival-gare" id="arrival-gare" placeholder="Gare d'arrivée" />
                 <label class="label" for="arrival-gare">Gare d'arrivée </label>
               </div>
             </div>
               <img src="images/swap_button.svg" alt="Echanger les gares" />
             <div class="date">
               <div class="champ">
-                <input type="date" name="go-date" id="go-date" />
+                <input type="date" name="go-date" id="go-date" placeholder="Date Aller" />
                 <label class="label" for="go-date">Date Aller</label>
               </div>
               <div class="champ bottom-champ">
-                <input type="date" name="back-date" id="back-date" />
+                <input type="date" name="back-date" id="back-date" placeholder="Date Retour"/>
                 <label class="label" for="back-date">Date Retour</label>
               </div>
             </div>
@@ -61,30 +61,38 @@
         <h2>Bons plan du moment</h2>
         <article class="gp-article-one">
           <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            <div class="gp-img">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            </div>
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Lille</h4>
-          <h4>Marseille</h4>
-          <p>80€</p>
+          <div class="gp-hfour-p">
+            <h4>Lille</h4>
+            <h4>Marseille</h4>
+            <p>80<strong>€</strong></p>
+          </div>
         </article>
         <article class="gp-article-two">
           <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            <div class="gp-img">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            </div>
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Grenoble</h4>
-          <h4>Bordeaux</h4>
-          <p>160€</p>
+          <div class="gp-hfour-p">
+            <h4>Grenoble</h4>
+            <h4>Bordeaux</h4>
+            <p>160<strong>€</strong></p>
+          </div>
         </article>
         <article class="gp-article-three">
           <div class="img-time">
             <img src="images/white_human.svg" alt="Bonhomme Blanc" />
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <div class="title-four-paragraph">
+          <div class="gp-hfour-p">
             <h4>Paris</h4>
             <h4>Nantes</h4>
             <p>30<strong>€</strong></p>
@@ -95,46 +103,58 @@
             <img src="images/white_human.svg" alt="Bonhomme Blanc" />
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Rennes</h4>
-          <h4>Vannes</h4>
-          <p>5€</p>
+          <div class="gp-hfour-p">
+            <h4>Rennes</h4>
+            <h4>Vannes</h4>
+            <p>5<strong>€</strong></p>
+          </div>
         </article>
       </section>
 
       <section class="weekend">
         <h2>Envie de partir ce week-end ?</h2>
-        <article>
+        <article class="wk-article-one">
           <div class="img-time">
             <img src="images/white_human.svg" alt="Bonhomme Blanc" />
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Lyon</h4>
-          <p>À partir de 30€</p>
+          <div class="wk-hfour-p">
+            <h4>Lyon</h4>
+            <p>À partir de 30<strong>€</strong></p>
+          </div>
         </article>
-        <article>
+        <article class="wk-article-two">
           <div class="img-time">
             <img src="images/white_human.svg" alt="Bonhomme Blanc" />
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Paris</h4>
-          <p>À partir de 10€</p>
+          <div class="wk-hfour-p">
+            <h4>Paris</h4>
+            <p>À partir de 10<strong>€</strong></p>
+          </div>
         </article>
-        <article>
+        <article class="wk-article-three">
           <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            <div class="wk-img">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            </div>
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Grenoble</h4>
-          <p>À partir de 40€</p>
+          <div class="wk-hfour-p">
+            <h4>Grenoble</h4>
+            <p>À partir de 40<strong>€</strong></p>
+          </div>
         </article>
-        <article>
+        <article class="wk-article-four">
           <div class="img-time">
             <img src="images/white_human.svg" alt="Bonhomme Blanc" />
             <time datetime="2021-01-23">23/01</time>
           </div>
-          <h4>Nantes</h4>
-          <p>À partir de 20€</p>
+          <div class="wk-hfour-p">
+            <h4>Nantes</h4>
+            <p>À partir de 20<strong>€</strong></p>
+          </div>
         </article>
       </section>
 
