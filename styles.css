@@ -78,10 +78,30 @@ input:focus ~ label, .submit-search {
   background-color: #FCD924;
 }
 
-/************************* Titre h2*/
-h2 {
+/************************* Title */
 
+h1 {
+  display: flex;
+  width: 131px;
+  height: 17px;
+  margin-left: 20px;
 }
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Raleway-bold";
+  font-size: 18px;
+}
+
 
 /*************************************************** HEADER */
 
@@ -93,15 +113,6 @@ header {
   height: 56px;
   box-shadow: 0px 4px 4px lightgrey;
   background-color: white;
-}
-
-/************************* Titre h1 */
-
-header h1 {
-  display: flex;
-  width: 131px;
-  height: 17px;
-  margin-left: 20px;
 }
 
 /************************* Navigation */
@@ -122,11 +133,7 @@ main {
 
 /************************* SECTION WELCOME RESEARCH */
 
-
-/************************* Titre h3 */
-
-h3 {
-  font-size: 24px;
+.welcome-research {
   margin-top: 50px;
 }
 
@@ -234,17 +241,57 @@ input:focus ~ label {
 
 /************************* SECTION GOOD PLANS */
 
-/************************* Titre h2 */
+.good-plans {
+  margin-bottom: 42px;
+}
 
+.good-plans article {
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 13px;
+  box-shadow: 0px 4px 4px lightgray;
+}
 
+.good-plans p {
+  font-family: "Raleway-extrabold";
+  font-size: 24px;
+}
 
+.good-plans p strong {
+  font-size: 14px;
+}
 /************************* Articles */
 
+.gp-article-one, .gp-article-two, .gp-article-four {
+  display: none;
+}
+
+.gp-article-three {
+  background-image:
+  linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  url('images/nantes_good_plans.svg');
+}
+
+.img-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.title-four-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+}
 
 
 /************************* SECTION WEEKEND */
 
-/************************* Titre h2 */
 
 
 
@@ -254,7 +301,6 @@ input:focus ~ label {
 
 /************************* SECTION WORKS */
 
-/************************* Titre h2 */
 
 
 
@@ -277,69 +323,3 @@ input:focus ~ label {
 /************************* Articles */
 
 /**************************************************************************** @MEDIA-QUERIES */
-
-/*************************************************** HEADER */
-
-
-
-/************************* Titre h1 */
-
-
-
-/************************* Navigation */
-
-/*************************************************** MAIN*/
-
-/*************************SECTION WELCOME RESEARCH */
-
-/************************* Article */
-
-
-
-/************************* Form */
-
-
-
-/************************* SECTION GOOD PLANS */
-
-/************************* Titre h2 */
-
-
-
-/************************* Articles */
-
-
-
-/************************* SECTION WEEKEND */
-
-/************************* Titre h2 */
-
-
-
-/************************* Articles */
-
-
-
-/************************* SECTION WORKS */
-
-/************************* Titre h2 */
-
-
-
-/************************* Articles */
-
-
-
-/************************* SECTION REVIEW */
-
-/************************* Articles */
-
-
-/************************* Div */
-
-
-/*************************SECTION PAIEMENT */
-
-/*************************************************** FOOTER */
-
-/************************* Articles */
