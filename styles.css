@@ -156,7 +156,7 @@ body {
 /************************* Background Color Yellow */
 
 input:focus ~ label,
-.submit-search{
+.submit-search {
   background-color: #fcd924;
 }
 
@@ -164,8 +164,8 @@ input:focus ~ label,
 
 h1 {
   display: flex;
-  width: 131px;
-  height: 17px;
+  width: 140px;
+  height: 25px;
   margin-left: 20px;
 }
 
@@ -185,7 +185,15 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-family: "Raleway-bold";
+  text-align: center;
+  margin: 13px 0px;
+  font-size: 16px;
+}
+
+h6 {
+  text-align: center;
+  font-size: 14px;
 }
 
 /************************* li */
@@ -352,6 +360,7 @@ input:not(:placeholder-shown) ~ label {
   height: 280px;
   border-radius: 8px;
   border: none;
+  margin-bottom: 15px;
   padding: 10px 13px;
   box-shadow: 0px 4px 4px lightgray;
 }
@@ -375,7 +384,7 @@ input:not(:placeholder-shown) ~ label {
 .wk-article-one,
 .wk-article-three,
 .wk-article-four {
-  display: none;
+  overflow: hidden;
 }
 
 .gp-article-one {
@@ -421,7 +430,6 @@ input:not(:placeholder-shown) ~ label {
   font-size: 24px;
   color: #fff;
 }
-
 
 .gp-hfour-p,
 .wk-hfour-p {
@@ -473,24 +481,178 @@ input:not(:placeholder-shown) ~ label {
 /************************* SECTION WORK */
 
 .works {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 15px 10px;
   background-color: rgba(252, 217, 36, 0.5);
+  margin-bottom: 42px;
 }
 
 .works h2 {
-  margin: 28px 0px;
+  margin-bottom: 15px;
 }
+
+.works article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0px 10px;
+  margin-bottom: 15px;
+}
+
+.ol-img {
+  display: flex;
+}
+
+.ol-img li {
+  margin: 10px;
+}
+
+.ol-img img {
+  display: none;
+}
+
 
 /************************* SECTION REVIEW */
 
 /************************* Articles */
 
+.review article {
+  display: flex;
+  flex-direction: column;
+  height: 172px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px lightgray;
+}
+
+.review-img-infos {
+  display: flex;
+}
+
+.review-img-infos img {
+  margin: 0px 10px 10px 0px;
+}
+
+.review-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.review-title, 
+.review-grade {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-grade {
+  display: flex;
+  align-items: center;
+}
+
+.review-grade p:first-child {
+  font-family: "Raleway-bold";
+}
+
+.review-comment-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+}
+
+.review-date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
 /************************* Div */
 
-/************************* SECTION PAIEMENT */
+.back-to-top {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /*************************************************** FOOTER */
 
+footer {
+  margin-top: 42px;
+}
+
+.paiement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 56px;
+  background-color: rgba(252, 217, 36, 0.5);
+}
+
+.paiement img {
+  width: 30px;
+  height: 30px;
+}
+
 /************************* Articles */
 
+.footer-article {
+  margin: 20px;
+}
+
+.footer-article ul li {
+  text-align: center;
+  margin: 5px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram {
+  margin: 0px 10px;
+}
+
+.download-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appstore {
+  margin-right: 5px;
+}
+
+.google-play {
+  margin-left: 5px;
+}
+
+.footer-logo {
+  width: 140px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+}
 /**************************************************************************** @MEDIA-QUERIES */

@@ -3,43 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Revente de billets de train entre particuliers.">
+    <meta
+      name="description"
+      content="Revente de billets de train entre particuliers."
+    />
     <title>Troc des Trains - Billets d'occasions</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  
+
   <body>
     <header>
       <h1>
-        <img class="logo" src="images/logo.svg" alt="Troc des Trains" />
+        <img src="images/logo.svg" alt="Troc des Trains" />
       </h1>
       <nav>
         <a class="sell-link" href="index.html">Vends ton billet</a>
         <img class="eye" src="images/eye.svg" alt="Accessibilité" />
-        <img class="nav-img user-compte" src="images/user_compte.svg" alt="Compte Utilisateur" />
-        <img class="nav-img shopping-basket" src="images/shopping_basket.svg" alt="Compte Panier" />
+        <img
+          class="nav-img user-compte"
+          src="images/user_compte.svg"
+          alt="Compte Utilisateur"
+        />
+        <img
+          class="nav-img shopping-basket"
+          src="images/shopping_basket.svg"
+          alt="Compte Panier"
+        />
       </nav>
     </header>
 
     <main>
       <section class="welcome-research">
-        <h3>
-          <strong>Salut,</strong> <br>où souhaites-tu aller ?
-        </h3>
+        <h3><strong>Salut,</strong> <br />où souhaites-tu aller ?</h3>
         <blockquote>Achètes et vends en toute sérénité !</blockquote>
         <form class="form">
           <div class="gare-date">
             <div class="gare">
               <div class="champ">
-                <input type="text" name="departure-gare" id="departure-gare" placeholder="Gare de départ" />
-                <label class="label" for="departure-gare">Gare de départ </label>
+                <input
+                  type="text"
+                  name="departure-gare"
+                  id="departure-gare"
+                  placeholder="Gare de départ"
+                />
+                <label class="label" for="departure-gare"
+                  >Gare de départ
+                </label>
               </div>
               <div class="champ bottom-champ">
-                <input type="text" name="arrival-gare" id="arrival-gare" placeholder="Gare d'arrivée" />
+                <input
+                  type="text"
+                  name="arrival-gare"
+                  id="arrival-gare"
+                  placeholder="Gare d'arrivée"
+                />
                 <label class="label" for="arrival-gare">Gare d'arrivée </label>
               </div>
             </div>
-              <img src="images/swap_button_mobile.svg" alt="Echanger les gares" />
+            <img src="images/swap_button_mobile.svg" alt="Echanger les gares" />
             <div class="date">
               <div class="champ">
                 <input type="date" name="go-date" id="go-date" />
@@ -53,7 +74,11 @@
           </div>
           <div class="submit-form">
             <input class="submit-search" type="submit" value="Je recherche" />
-            <input class="submit-sell" type="submit" value="Je vends un billet" />
+            <input
+              class="submit-sell"
+              type="submit"
+              value="Je vends un billet"
+            />
           </div>
         </form>
       </section>
@@ -163,109 +188,138 @@
         <h2>Comment ça fonctionne ?</h2>
         <article>
           <h5>J'achète</h5>
-          <ol>
-            <li>Je recherche</li>
-            <li>Je trouve mon billet</li>
-            <li>Je checkes les avis du vendeur</li>
-            <li>Je paye et reçoit immédiatement mon billet</li>
-          </ol>
-          <img src="images/buy_character.svg" alt="Bonhomme qui achète" />
+          <div class="ol-img">
+            <ol>
+              <li>Je recherche</li>
+              <li>Je trouve mon billet</li>
+              <li>Je checkes les avis du vendeur</li>
+              <li>Je paye et reçoit immédiatement mon billet</li>
+            </ol>
+            <img src="images/buy_character.svg" alt="Bonhomme qui achète" />
+          </div>
         </article>
         <article>
           <h5>Je vends</h5>
-          <ol>
-            <li>Je télécharge le billet sur l'application</li>
-            <li>Je fixe le prix</li>
-            <li>J'enregistre mes coordonnées bancaires</li>
-            <li>Je reçoit l'argent dès que le billet est vendu</li>
-          </ol>
-          <img src="images/sell.svg" alt="Bonhommes qui conclue un marché" />
+          <div class="ol-img">
+            <ol>
+              <li>Je télécharge le billet sur l'application</li>
+              <li>Je fixe le prix</li>
+              <li>J'enregistre mes coordonnées bancaires</li>
+              <li>Je reçoit l'argent dès que le billet est vendu</li>
+            </ol>
+            <img src="images/sell.svg" alt="Bonhommes qui conclue un marché" />
+          </div>
         </article>
         <article>
           <h5>Je donne mon avis</h5>
-          <ol>
-            <li>Pour rassurer les prochains acheteurs</li>
-            <li>Pour avoir une bonne réputation</li>
-            <li>Pour améliorer votre site</li>
-            <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
-          </ol>
-          <img src="images/give_review.svg" alt="Bonhomme qui écrit" />
+          <div class="ol-img">
+            <ol>
+              <li>Pour rassurer les prochains acheteurs</li>
+              <li>Pour avoir une bonne réputation</li>
+              <li>Pour améliorer votre site</li>
+              <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
+            </ol>
+            <img src="images/give_review.svg" alt="Bonhomme qui écrit" />
+          </div>
         </article>
         <article>
           <h5>Qui payes les frais ?</h5>
-          <ol>
-            <li>Prix de vente du billet 30€</li>
-            <li>Le vendeur reçoit 29€</li>
-            <li>L'acheteur paye 31€</li>
-            <li>Troc des Trains reçoit 2€</li>
-          </ol>
-          <img src="images/fees.svg" alt="Bonhomme avec un chèque" />
+          <div class="ol-img">
+            <ol>
+              <li>Prix de vente du billet 30€</li>
+              <li>Le vendeur reçoit 29€</li>
+              <li>L'acheteur paye 31€</li>
+              <li>Troc des Trains reçoit 2€</li>
+            </ol>
+            <img src="images/fees.svg" alt="Bonhomme avec un chèque" />
+          </div>
         </article>
       </section>
 
       <div class="review">
+        <h2>Vos avis</h2>
         <article>
-          <img src="images/jean.webp" alt="Photo de profil de Jean Paloz" />
-          <h6>Jean Paloz</h6>
-          <p>Novice</p>
-          <p>3/5</p>
-          <p>5 Avis</p>
-          <p>
-            Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce système
-            d'alerte !
-          </p>
-          <p>Il y a une semaine...</p>
+          <div class="review-img-infos">
+              <img src="images/jean.webp" alt="Photo de profil de Jean Paloz" />
+              <div class="review-infos">
+                <div class="review-title">
+                  <h6>Jean Paloz <br> Novice</h6>
+                </div>
+                <div class="review-grade">
+                  <p>3/5</p>
+                  <p>5 Avis</p>
+                </div>
+              </div>
+          </div>
+          <div class="review-comment-date">
+            <p>
+              Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce système d'alerte !
+            </p>
+          </div>
+          <p class="review-date">Il y a une semaine...</p>
         </article>
         <article>
-          <img
-            src="images/flore.webp"
-            alt="Photo de profil de Flore Farpa"
-          />
-          <h6>Flore Farpa</h6>
-          <p>Ambassadrice</p>
-          <p>4/5</p>
-          <p>47 Avis</p>
-          <p>
-            J'ai achetée mon billet rapidement et sans problèmes ! Vraiment super
-            le mode paiement, je recommande Troc des Trains !
-          </p>
-          <p>Il y a 3 jours...</p>
+          <div class="review-img-infos">
+              <img src="images/flore.webp" alt="Photo de profil de Flore Farpa" />
+              <div class="review-infos">
+                <div class="review-title">
+                  <h6>Flore Farpa <br> Ambassadrice</h6>
+                </div>
+                <div class="review-grade">
+                  <p>4/5</p>
+                  <p>47 Avis</p>
+                </div>
+              </div>
+          </div>
+          <div class="review-comment-date">
+            <p>
+              J’ai acheté mon billet rapidement et sans problèmes. ! Vraiment super le mode de paiement, je recommande Troc des Trains ! 
+            </p>
+          </div>
+          <p class="review-date">Il y a 3 jours...</p>
         </article>
         <article>
-          <img src="images/zoe.webp" alt="Photo de profil de Zoé Tradéré" />
-          <h6>Zoé Tradéré</h6>
-          <p>Confirmée</p>
-          <p>4/5</p>
-          <p>34 Avis</p>
-          <p>
-            Après plus de 20 transactions, j'écris ce commentaire car je ne me
-            sépare plus de Troc des Trains pour mes voyages en amoureux le
-            week-end !
-          </p>
-          <p>Il y a 3 jours...</p>
+          <div class="review-img-infos">
+              <img src="images/zoe.webp" alt="Photo de profil de Zoé Tradéré" />
+              <div class="review-infos">
+                <div class="review-title">
+                  <h6>Zoé Tradéré <br> Confirmée</h6>
+                </div>
+                <div class="review-grade">
+                  <p>4/5</p>
+                  <p>34 Avis</p>
+                </div>
+              </div>
+          </div>
+          <div class="review-comment-date">
+            <p>
+              Après plus de 20 transactions, j’écris ce commentaire car je ne me sépare plus de Troc des trains pour mes voyages en amoureux le week-end !
+            </p>
+          </div>
+          <p class="review-date">Il y a 3 jours...</p>
         </article>
-        <div>
+        <div class="back-to-top">
           <img src="images/back_to_top.svg" alt="Retour en haut de la page" />
         </div>
       </div>
+    </main>
 
-      <section class="paiement">
-        <img src="images/mastercard.svg" alt="Mastercard" />
-        <img src="images/visa.svg" alt="Visa" />
-        <h6>Paiement 100% sécurisé</h6>
-        <img src="images/americain_express.svg" alt="Americain Express" />
-        <img src="images/paypal.svg" alt="Paypal" />
-      </section>
-
-      <footer>
-        <article>
+    <footer>
+        <article class="paiement">
+          <img src="images/mastercard.svg" alt="Mastercard" />
+          <img src="images/visa.svg" alt="Visa" />
+          <h6>Paiement <br> 100% sécurisé</h6>
+          <img src="images/americain_express.svg" alt="Americain Express" />
+          <img src="images/paypal.svg" alt="Paypal" />
+        </article>
+        <article class="footer-article">
           <h5>L'entreprise</h5>
           <ul>
             <li>Qui sommes-nous ?</li>
             <li>Nous rejoindre</li>
           </ul>
         </article>
-        <article>
+        <article class="footer-article">
           <h5>Informations légales</h5>
           <ul>
             <li>Chartes</li>
@@ -273,7 +327,7 @@
             <li>Règlement Européen</li>
           </ul>
         </article>
-        <article>
+        <article class="footer-article">
           <h5>Un problème ?</h5>
           <ul>
             <li>Service clientèle 24/7</li>
@@ -282,25 +336,26 @@
         </article>
         <article>
           <h5>Suis-nous !</h5>
-          <div>
+          <div class="social-media">
             <img src="images/facebook.svg" alt="Facebook" />
-            <img src="images/instagram.svg" alt="Instagram" />
+            <img class="instagram" src="images/instagram.svg" alt="Instagram" />
             <img src="images/twitter.svg" alt="Twitter" />
           </div>
         </article>
         <article>
           <h5>Télécharge l'appli</h5>
-          <img src="images/appstore.svg" alt="Disponible sur l'appstore" />
-          <img
-            src="images/google_play.svg"
-            alt="Téléchargeable sur google play"
-          />
+          <div class="download-app">         
+            <img class="appstore" src="images/appstore.svg" alt="Disponible sur l'appstore" />
+            <img class="google-play"
+              src="images/google_play.svg"
+              alt="Téléchargeable sur google play"
+            />
+          </div> 
         </article>
-        <article>
-          <img class="logo" src="images/logo.svg" alt="Troc des Trains" />
-          <h6>© Troc des Trains 2021</h6>
+        <article class="logo-copyright">
+          <img class="footer-logo" src="images/logo.svg" alt="Troc des Trains" />
+          <h6 class="copyright">© Troc des Trains 2021</h6>
         </article>
-      </footer>
-    </main>
+    </footer>
   </body>
 </html>
