@@ -48,13 +48,11 @@ table {
 @font-face {
   font-family: "Raleway-bold";
     src:  url("fonts/raleway-bold.woff") format("woff");
-    font-weight: bold;
 }
 
 @font-face {
   font-family: "Raleway-extrabold";
     src:   url("fonts/raleway-extrabold.woff") format("woff");
-    font-weight: bolder;
 }
 
 @font-face {
@@ -65,7 +63,6 @@ table {
 @font-face {
   font-family: "Raleway-light";
     src:   url("fonts/raleway-light.woff") format("woff");
-    font-weight: lighter;
 }
 
 /*************************************************** GENERAL */
@@ -159,7 +156,7 @@ blockquote {
   position: relative;
 }
 
-input {
+.gare-date input {
   height: 34px;
   outline: none;
   border-radius: 4px;
@@ -167,7 +164,7 @@ input {
   background-color: #F3F3F3;
 }
 
-input:focus {
+.gare-date input:focus {
   border: 1px solid #FCD924;
 }
 
@@ -223,7 +220,6 @@ input:focus ~ label {
 .submit-search, .submit-sell {
   font-family: "Raleway-extrabold";
   font-size: 14px;
-  border: 1px solid #FCD924;
 }
 .submit-sell {
   margin: 10px 0px 15px 0px;
