@@ -71,11 +71,18 @@ body {
   font-family: "Raleway-light";
   background-color: #F3F3F3;
 }
+
 /************************* Background Color Yellow */
 
 input:focus ~ label, .submit-search {
   background-color: #FCD924;
 }
+
+/************************* Titre h2*/
+h2 {
+
+}
+
 /*************************************************** HEADER */
 
 header {
@@ -164,12 +171,11 @@ blockquote {
   background-color: #F3F3F3;
 }
 
-.gare-date input:focus {
+.gare-date input:focus, .submit-form input {
   border: 1px solid #FCD924;
 }
 
 input:focus ~ label {
-  font-family: "Raleway-light";
   font-size: 8px;
   top: -9px;
   padding: 5px;
@@ -195,7 +201,7 @@ input:focus ~ label {
 }
 
 .label {
-  font-family: "Raleway-light";
+
   font-size: 12px;
   position: absolute;
   top: 12px;
