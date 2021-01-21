@@ -170,13 +170,13 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 42px;
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 16px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 42px;
 }
 
 h4 {
@@ -221,7 +221,8 @@ header {
   display: none;
 }
 
-.shopping-basket {
+.shopping-basket,
+.eye {
   margin: 0px 20px;
 }
 
@@ -255,6 +256,7 @@ blockquote {
 
 .form {
   margin: 42px 0px;
+  padding: 15px 10px;
   border-radius: 8px;
   box-shadow: 0px 4px 4px lightgrey;
   background-color: white;
@@ -263,7 +265,7 @@ blockquote {
 .gare-date {
   display: flex;
   justify-content: center;
-  padding: 15px 10px;
+  padding: 15px 0px;
 }
 
 .champ {
@@ -271,6 +273,7 @@ blockquote {
 }
 
 .gare-date input {
+  width: 100px;
   height: 34px;
   outline: none;
   border-radius: 4px;
@@ -295,10 +298,6 @@ input:not(:placeholder-shown) ~ label {
   color: transparent;
 }
 
-.gare input {
-  width: 130px;
-}
-
 .bottom-champ {
   margin: 10px 0px 0px 0px;
 }
@@ -307,10 +306,6 @@ input:not(:placeholder-shown) ~ label {
   width: 25px;
   height: 25px;
   margin: 30px 4px 0px 4px;
-}
-
-.date input {
-  width: 70px;
 }
 
 .label {
@@ -508,12 +503,12 @@ input:not(:placeholder-shown) ~ label {
 
 .ol-img li {
   margin: 10px;
+  list-style: disc inside;
 }
 
 .ol-img img {
   display: none;
 }
-
 
 /************************* SECTION REVIEW */
 
@@ -545,7 +540,7 @@ input:not(:placeholder-shown) ~ label {
   width: 100vh;
 }
 
-.review-title, 
+.review-title,
 .review-grade {
   display: flex;
   flex-direction: column;
@@ -656,3 +651,42 @@ footer {
   font-size: 12px;
 }
 /**************************************************************************** @MEDIA-QUERIES */
+
+@media (min-width: 600px) {
+  .eye {
+    display: inline;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  blockquote {
+    font-size: 24px;
+  }
+
+  .form {
+    padding: 15px 30px;
+  }
+
+  .gare,
+  .date {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .gare-date img {
+    margin: 17px 10px 0px 10px;
+  }
+
+  .gare div:first-child,
+  .date div:first-child {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .submit-form {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
