@@ -39,7 +39,7 @@
         <form class="form">
           <div class="gare-date">
             <div class="gare">
-              <div class="champ ">
+              <div class="champ">
                 <input
                   type="text"
                   name="departure-gare"
@@ -50,6 +50,11 @@
                   >Gare de départ
                 </label>
               </div>
+              <img
+                class="swap-button-desktop"
+                src="images/swap_button_desktop.svg"
+                alt="Echanger les gares"
+              />
               <div class="champ bottom-champ">
                 <input
                   type="text"
@@ -60,15 +65,29 @@
                 <label class="label" for="arrival-gare">Gare d'arrivée </label>
               </div>
             </div>
-            <img src="images/swap_button_mobile.svg" alt="Echanger les gares" />
+            <img
+              class="swap-button-mobile"
+              src="images/swap_button_mobile.svg"
+              alt="Echanger les gares"
+            />
             <div class="date">
               <div class="champ">
                 <input type="date" name="go-date" id="go-date" />
                 <label class="label" for="go-date">Date Aller</label>
+                <img
+                  class="calendar"
+                  src="images/calendar.svg"
+                  alt="Calendrier"
+                />
               </div>
               <div class="champ bottom-champ">
                 <input type="date" name="back-date" id="back-date" />
                 <label class="label" for="back-date">Date Retour</label>
+                <img
+                  class="calendar"
+                  src="images/calendar.svg"
+                  alt="Calendrier"
+                />
               </div>
             </div>
           </div>
@@ -85,103 +104,107 @@
 
       <section class="good-plans">
         <h3>Bons plan du moment</h3>
-        <article class="gp-article-one">
-          <div class="img-time">
-            <div class="gp-img">
-              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+        <div class="gp-article-group">
+          <article class="gp-article-one">
+            <div class="img-time">
+              <div class="gp-img">
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              </div>
+              <time datetime="2021-01-23">23/01</time>
             </div>
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="gp-hfour-p">
-            <h4>Lille</h4>
-            <h4>Marseille</h4>
-            <p>80<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="gp-article-two">
-          <div class="img-time">
-            <div class="gp-img">
-              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+            <div class="gp-hfour-p">
+              <h4>Lille</h4>
+              <h4>Marseille</h4>
+              <p>80<strong>€</strong></p>
             </div>
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="gp-hfour-p">
-            <h4>Grenoble</h4>
-            <h4>Bordeaux</h4>
-            <p>160<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="gp-article-three">
-          <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="gp-hfour-p">
-            <h4>Paris</h4>
-            <h4>Nantes</h4>
-            <p>30<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="gp-article-four">
-          <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="gp-hfour-p">
-            <h4>Rennes</h4>
-            <h4>Vannes</h4>
-            <p>5<strong>€</strong></p>
-          </div>
-        </article>
+          </article>
+          <article class="gp-article-two">
+            <div class="img-time">
+              <div class="gp-img">
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              </div>
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="gp-hfour-p">
+              <h4>Grenoble</h4>
+              <h4>Bordeaux</h4>
+              <p>160<strong>€</strong></p>
+            </div>
+          </article>
+          <article class="gp-article-three">
+            <div class="img-time">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="gp-hfour-p">
+              <h4>Paris</h4>
+              <h4>Nantes</h4>
+              <p>30<strong>€</strong></p>
+            </div>
+          </article>
+          <article class="gp-article-four">
+            <div class="img-time">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="gp-hfour-p">
+              <h4>Rennes</h4>
+              <h4>Vannes</h4>
+              <p>5<strong>€</strong></p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="weekend">
         <h3>Envie de partir ce week-end ?</h3>
-        <article class="wk-article-one">
-          <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="wk-hfour-p">
-            <h4>Lyon</h4>
-            <p>À partir de 30<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="wk-article-two">
-          <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="wk-hfour-p">
-            <h4>Paris</h4>
-            <p>À partir de 10<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="wk-article-three">
-          <div class="img-time">
-            <div class="wk-img">
+        <div class="wk-article-group">
+          <article class="wk-article-one">
+            <div class="img-time">
               <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <time datetime="2021-01-23">23/01</time>
             </div>
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="wk-hfour-p">
-            <h4>Grenoble</h4>
-            <p>À partir de 40<strong>€</strong></p>
-          </div>
-        </article>
-        <article class="wk-article-four">
-          <div class="img-time">
-            <img src="images/white_human.svg" alt="Bonhomme Blanc" />
-            <time datetime="2021-01-23">23/01</time>
-          </div>
-          <div class="wk-hfour-p">
-            <h4>Nantes</h4>
-            <p>À partir de 20<strong>€</strong></p>
-          </div>
-        </article>
+            <div class="wk-hfour-p">
+              <h4>Lyon</h4>
+              <p>À partir de 30<strong>€</strong></p>
+            </div>
+          </article>
+          <article class="wk-article-two">
+            <div class="img-time">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="wk-hfour-p">
+              <h4>Paris</h4>
+              <p>À partir de 10<strong>€</strong></p>
+            </div>
+          </article>
+          <article class="wk-article-three">
+            <div class="img-time">
+              <div class="wk-img">
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+                <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              </div>
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="wk-hfour-p">
+              <h4>Grenoble</h4>
+              <p>À partir de 40<strong>€</strong></p>
+            </div>
+          </article>
+          <article class="wk-article-four">
+            <div class="img-time">
+              <img src="images/white_human.svg" alt="Bonhomme Blanc" />
+              <time datetime="2021-01-23">23/01</time>
+            </div>
+            <div class="wk-hfour-p">
+              <h4>Nantes</h4>
+              <p>À partir de 20<strong>€</strong></p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="works">
@@ -238,66 +261,84 @@
 
       <div class="review">
         <h3>Vos avis</h3>
-        <article>
-          <div class="review-img-infos">
+        <div class="review-article-group">
+          <article>
+            <div class="review-img-infos">
               <img src="images/jean.webp" alt="Photo de profil de Jean Paloz" />
               <div class="review-infos">
                 <div class="review-title">
-                  <h6>Jean Paloz <br> Novice</h6>
+                  <h6>
+                    Jean Paloz <br />
+                    Novice
+                  </h6>
                 </div>
                 <div class="review-grade">
                   <p>3/5</p>
                   <p>5 Avis</p>
                 </div>
               </div>
-          </div>
-          <div class="review-comment-date">
-            <p>
-              Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce système d'alerte !
-            </p>
-          </div>
-          <p class="review-date">Il y a une semaine...</p>
-        </article>
-        <article>
-          <div class="review-img-infos">
-              <img src="images/flore.webp" alt="Photo de profil de Flore Farpa" />
+            </div>
+            <div class="review-comment-date">
+              <p>
+                Grâce à mon alerte j'ai pu acheter mon billet. C'est super ce
+                système d'alerte !
+              </p>
+            </div>
+            <p class="review-date">Il y a une semaine...</p>
+          </article>
+          <article>
+            <div class="review-img-infos">
+              <img
+                src="images/flore.webp"
+                alt="Photo de profil de Flore Farpa"
+              />
               <div class="review-infos">
                 <div class="review-title">
-                  <h6>Flore Farpa <br> Ambassadrice</h6>
+                  <h6>
+                    Flore Farpa <br />
+                    Ambassadrice
+                  </h6>
                 </div>
                 <div class="review-grade">
                   <p>4/5</p>
                   <p>47 Avis</p>
                 </div>
               </div>
-          </div>
-          <div class="review-comment-date">
-            <p>
-              J’ai acheté mon billet rapidement et sans problèmes. ! Vraiment super le mode de paiement, je recommande Troc des Trains ! 
-            </p>
-          </div>
-          <p class="review-date">Il y a 3 jours...</p>
-        </article>
-        <article>
-          <div class="review-img-infos">
+            </div>
+            <div class="review-comment-date">
+              <p>
+                J’ai acheté mon billet rapidement et sans problèmes. ! Vraiment
+                super le mode de paiement, je recommande Troc des Trains !
+              </p>
+            </div>
+            <p class="review-date">Il y a 3 jours...</p>
+          </article>
+          <article>
+            <div class="review-img-infos">
               <img src="images/zoe.webp" alt="Photo de profil de Zoé Tradéré" />
               <div class="review-infos">
                 <div class="review-title">
-                  <h6>Zoé Tradéré <br> Confirmée</h6>
+                  <h6>
+                    Zoé Tradéré <br />
+                    Confirmée
+                  </h6>
                 </div>
                 <div class="review-grade">
                   <p>4/5</p>
                   <p>34 Avis</p>
                 </div>
               </div>
-          </div>
-          <div class="review-comment-date">
-            <p>
-              Après plus de 20 transactions, j’écris ce commentaire car je ne me sépare plus de Troc des trains pour mes voyages en amoureux le week-end !
-            </p>
-          </div>
-          <p class="review-date">Il y a 3 jours...</p>
-        </article>
+            </div>
+            <div class="review-comment-date">
+              <p>
+                Après plus de 20 transactions, j’écris ce commentaire car je ne
+                me sépare plus de Troc des trains pour mes voyages en amoureux
+                le week-end !
+              </p>
+            </div>
+            <p class="review-date">Il y a 3 jours...</p>
+          </article>
+        </div>
         <div class="back-to-top">
           <img src="images/back_to_top.svg" alt="Retour en haut de la page" />
         </div>
@@ -305,57 +346,76 @@
     </main>
 
     <footer>
-        <article class="paiement">
-          <img src="images/mastercard.svg" alt="Mastercard" />
-          <img src="images/visa.svg" alt="Visa" />
-          <h6>Paiement <br> 100% sécurisé</h6>
-          <img src="images/americain_express.svg" alt="Americain Express" />
-          <img src="images/paypal.svg" alt="Paypal" />
-        </article>
-        <article class="footer-article">
+      <article class="paiement">
+        <img src="images/mastercard.svg" alt="Mastercard" />
+        <img src="images/visa.svg" alt="Visa" />
+        <h6>Paiement 100% sécurisé</h6>
+        <img src="images/americain_express.svg" alt="Americain Express" />
+        <img src="images/paypal.svg" alt="Paypal" />
+      </article>
+      <div class="footer-no-paiement">
+        <article class="enterprise-infos footer-article">
           <h5>L'entreprise</h5>
           <ul>
             <li>Qui sommes-nous ?</li>
             <li>Nous rejoindre</li>
           </ul>
         </article>
-        <article class="footer-article">
-          <h5>Informations légales</h5>
-          <ul>
-            <li>Chartes</li>
-            <li>Conditions générales de ventes</li>
-            <li>Règlement Européen</li>
-          </ul>
-        </article>
-        <article class="footer-article">
-          <h5>Un problème ?</h5>
-          <ul>
-            <li>Service clientèle 24/7</li>
-            <li>FAQ</li>
-          </ul>
-        </article>
-        <article>
-          <h5>Suis-nous !</h5>
-          <div class="social-media">
-            <img src="images/facebook.svg" alt="Facebook" />
-            <img class="instagram" src="images/instagram.svg" alt="Instagram" />
-            <img src="images/twitter.svg" alt="Twitter" />
-          </div>
-        </article>
-        <article>
-          <h5>Télécharge l'appli</h5>
-          <div class="download-app">         
-            <img class="appstore" src="images/appstore.svg" alt="Disponible sur l'appstore" />
-            <img class="google-play"
-              src="images/google_play.svg"
-              alt="Téléchargeable sur google play"
-            />
-          </div> 
-        </article>
+        <div class="infos-problems">
+          <article class="footer-article">
+            <h5>Informations légales</h5>
+            <ul>
+              <li>Chartes</li>
+              <li>Conditions générales de ventes</li>
+              <li>Règlement Européen</li>
+            </ul>
+          </article>
+          <article class="footer-article">
+            <h5>Un problème ?</h5>
+            <ul>
+              <li>Service clientèle 24/7</li>
+              <li>FAQ</li>
+            </ul>
+          </article>
+        </div>
+        <div class="follow-media">
+          <article>
+            <h5>Suis-nous !</h5>
+            <div class="social-media">
+              <img src="images/facebook.svg" alt="Facebook" />
+              <img
+                class="instagram"
+                src="images/instagram.svg"
+                alt="Instagram"
+              />
+              <img src="images/twitter.svg" alt="Twitter" />
+            </div>
+          </article>
+          <article>
+            <h5>Télécharge l'appli</h5>
+            <div class="download-app">
+              <img
+                class="appstore"
+                src="images/appstore.svg"
+                alt="Disponible sur l'appstore"
+              />
+              <img
+                class="google-play"
+                src="images/google_play.svg"
+                alt="Téléchargeable sur google play"
+              />
+            </div>
+          </article>
+        </div>
         <article class="logo-copyright">
-          <img class="footer-logo" src="images/logo.svg" alt="Troc des Trains" />
+          <img
+            class="footer-logo"
+            src="images/logo.svg"
+            alt="Troc des Trains"
+          />
           <h6 class="copyright">© Troc des Trains 2021</h6>
         </article>
+      </div>
     </footer>
   </body>
 </html>

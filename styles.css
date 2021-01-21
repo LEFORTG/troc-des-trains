@@ -214,6 +214,10 @@ header {
   background-color: white;
 }
 
+h1 img {
+  width: 140px;
+}
+
 /************************* Navigation */
 
 .sell-link,
@@ -265,7 +269,12 @@ blockquote {
 .gare-date {
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 15px 0px;
+}
+
+.swap-button-desktop {
+  display: none;
 }
 
 .champ {
@@ -316,6 +325,10 @@ input:not(:placeholder-shown) ~ label {
   pointer-events: none;
 }
 
+.calendar {
+  display: none;
+}
+
 /************************* Submit Form */
 
 .submit-form {
@@ -325,7 +338,7 @@ input:not(:placeholder-shown) ~ label {
 }
 
 .submit-form input {
-  width: 240px;
+  width: 242px;
   height: 40px;
   border-radius: 4px;
 }
@@ -344,11 +357,14 @@ input:not(:placeholder-shown) ~ label {
 
 .good-plans,
 .weekend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 42px;
 }
 
-.good-plans article,
-.weekend article {
+.gp-article-group article,
+.wk-article-group article {
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -495,15 +511,50 @@ input:not(:placeholder-shown) ~ label {
   background-color: #fff;
   margin: 0px 10px;
   margin-bottom: 15px;
+  padding: 0px 30px;
 }
 
 .ol-img {
   display: flex;
+  align-items: center;
+}
+
+ol {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+  margin-bottom: 20px;
+}
+
+ol::before {
+  content: "";
+  width: 3px;
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  left: -4px;
+  display: block;
+  background: #fcd924;
 }
 
 .ol-img li {
-  margin: 10px;
-  list-style: disc inside;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.ol-img li::before {
+  content: "";
+  display: block;
+  background: #fcd924;
+  position: absolute;
+  left: -20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
 .ol-img img {
@@ -514,7 +565,7 @@ input:not(:placeholder-shown) ~ label {
 
 /************************* Articles */
 
-.review article {
+.review-article-group article {
   display: flex;
   flex-direction: column;
   height: 172px;
@@ -594,6 +645,10 @@ footer {
   background-color: rgba(252, 217, 36, 0.5);
 }
 
+.paiement h6 {
+  font-size: 12px;
+}
+
 .paiement img {
   width: 30px;
   height: 30px;
@@ -635,7 +690,6 @@ footer {
 
 .footer-logo {
   width: 140px;
-  height: 25px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -650,9 +704,10 @@ footer {
 .copyright {
   font-size: 12px;
 }
+
 /**************************************************************************** @MEDIA-QUERIES */
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .eye {
     display: inline;
   }
@@ -662,11 +717,37 @@ footer {
   }
 
   blockquote {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .form {
     padding: 15px 30px;
+  }
+
+  .gare {
+    display: flex;
+    align-items: end;
+  }
+
+  .swap-button-mobile {
+    display: none;
+  }
+
+  .swap-button-desktop {
+    display: block;
+    position: relative;
+    top: 9px;
+    left: -5px;
+  }
+
+  .gare-date {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .gare-date,
+  .submit-form {
+    justify-content: space-between;
   }
 
   .gare,
@@ -676,7 +757,7 @@ footer {
   }
 
   .gare-date img {
-    margin: 17px 10px 0px 10px;
+    margin: 0px;
   }
 
   .gare div:first-child,
@@ -684,9 +765,198 @@ footer {
     margin: 0px 10px 0px 0px;
   }
 
+  .date {
+    width: 242px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .date input {
+    width: 113px;
+  }
+
   .submit-form {
     flex-direction: row;
     align-items: baseline;
+  }
+
+  .submit-form input {
+    font-size: 16px;
+  }
+
+  .submit-search {
+    margin-right: 15px;
+  }
+
+  .gp-article-group,
+  .wk-article-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .works article {
+    height: 252px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .ol-img {
     justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+
+  ol::before {
+    left: -6px;
+    top: 20px;
+    bottom: 15px;
+  }
+
+  .ol-img li::before {
+    left: -25px;
+    height: 22px;
+    width: 22px;
+  }
+
+  .ol-img ol {
+    width: 50%;
+  }
+
+  .ol-img ol li {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .ol-img img {
+    display: block;
+  }
+
+  .review-article-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .review-article-group article {
+    width: 50%;
+    margin: 7px;
+  }
+
+  .paiement {
+    justify-content: space-evenly;
+    margin-bottom: 42px;
+  }
+
+  .paiement h6 {
+    font-size: 16px;
+  }
+
+  .paiement img {
+    width: 55px;
+    height: 55px;
   }
 }
+
+@media (min-width: 700px) {
+  .footer-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+  }
+
+  .footer-article h5 {
+    text-align: inherit;
+  }
+
+  .footer-article ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer li {
+    position: relative;
+  }
+
+  footer li::before {
+    content: "";
+    display: block;
+    background: #fcd924;
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  .footer-no-paiement,
+  .follow-media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-no-paiement {
+    justify-content: space-around;
+  }
+
+  .enterprise-infos {
+    order: 2;
+  }
+
+  .infos-problems {
+    display: flex;
+    flex-direction: column-reverse;
+    order: 1;
+  }
+
+  .follow-media {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    order: 3;
+  }
+
+  .social-media {
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+
+  .logo-copyright {
+    display: flex;
+    align-items: center;
+    order: 4;
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+
+  .logo-copyright img {
+    width: 200px;
+  }
+}
+
+/* @media (min-width: 800px) {
+
+  header {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/aix-en-provence.webp");
+
+  }
+
+  .gare-date {
+
+  }
+} */
