@@ -183,7 +183,8 @@ h3 {
 
 .works-group-article article h4 , 
 .footer-no-paiement h4,
-.gp-hfour-p h4 {
+.gp-hfour-p h4,
+.wk-hfour-p h4 {
   font-family: "Raleway-bold";
   font-size: 24px;
 }
