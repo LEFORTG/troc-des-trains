@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Revente de billets de train entre particuliers."
-    />
+    <meta name="description" content="Revente de billets de train entre particuliers." />
     <title>Troc des Trains - Billets d'occasions</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -33,6 +30,7 @@
     </header>
 
     <main>
+      <div class="hero-full"></div>
       <section class="welcome-research">
         <h2><strong>Salut,</strong> <br />où souhaites-tu aller ?</h2>
         <blockquote>Achètes et vends en toute sérénité !</blockquote>
@@ -56,7 +54,7 @@
                 alt="Echanger les gares"
               />
               <div class="champ bottom-champ">
-                <input
+                <input class="input-arrival-gare"
                   type="text"
                   name="arrival-gare"
                   id="arrival-gare"
@@ -93,11 +91,8 @@
           </div>
           <div class="submit-form">
             <input class="submit-search" type="submit" value="Je recherche" />
-            <input
-              class="submit-sell"
-              type="submit"
-              value="Je vends un billet"
-            />
+            <input class="submit-sell" type="submit" value="Je vends un billet" />
+            <img class="arrow-open" src="images/arrow_open.svg" alt="Flèches déroulantes">
           </div>
         </form>
       </section>
@@ -209,54 +204,56 @@
 
       <section class="works">
         <h3>Comment ça fonctionne ?</h3>
-        <article>
-          <h5>J'achète</h5>
-          <div class="ol-img">
-            <ol>
-              <li>Je recherche</li>
-              <li>Je trouve mon billet</li>
-              <li>Je checkes les avis du vendeur</li>
-              <li>Je paye et reçoit immédiatement mon billet</li>
-            </ol>
-            <img src="images/buy_character.svg" alt="Bonhomme qui achète" />
-          </div>
-        </article>
-        <article>
-          <h5>Je vends</h5>
-          <div class="ol-img">
-            <ol>
-              <li>Je télécharge le billet sur l'application</li>
-              <li>Je fixe le prix</li>
-              <li>J'enregistre mes coordonnées bancaires</li>
-              <li>Je reçoit l'argent dès que le billet est vendu</li>
-            </ol>
-            <img src="images/sell.svg" alt="Bonhommes qui conclue un marché" />
-          </div>
-        </article>
-        <article>
-          <h5>Je donne mon avis</h5>
-          <div class="ol-img">
-            <ol>
-              <li>Pour rassurer les prochains acheteurs</li>
-              <li>Pour avoir une bonne réputation</li>
-              <li>Pour améliorer votre site</li>
-              <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
-            </ol>
-            <img src="images/give_review.svg" alt="Bonhomme qui écrit" />
-          </div>
-        </article>
-        <article>
-          <h5>Qui payes les frais ?</h5>
-          <div class="ol-img">
-            <ol>
-              <li>Prix de vente du billet 30€</li>
-              <li>Le vendeur reçoit 29€</li>
-              <li>L'acheteur paye 31€</li>
-              <li>Troc des Trains reçoit 2€</li>
-            </ol>
-            <img src="images/fees.svg" alt="Bonhomme avec un chèque" />
-          </div>
-        </article>
+        <div class="works-group-article">
+          <article>
+            <h5>J'achète</h5>
+            <div class="ol-img">
+              <ol>
+                <li>Je recherche</li>
+                <li>Je trouve mon billet</li>
+                <li>Je checkes les avis du vendeur</li>
+                <li>Je paye et reçoit immédiatement mon billet</li>
+              </ol>
+              <img src="images/buy_character.svg" alt="Bonhomme qui achète" />
+            </div>
+          </article>
+          <article>
+            <h5>Je vends</h5>
+            <div class="ol-img">
+              <ol>
+                <li>Je télécharge le billet sur l'application</li>
+                <li>Je fixe le prix</li>
+                <li>J'enregistre mes coordonnées bancaires</li>
+                <li>Je reçoit l'argent dès que le billet est vendu</li>
+              </ol>
+              <img src="images/sell.svg" alt="Bonhommes qui conclue un marché" />
+            </div>
+          </article>
+          <article>
+            <h5>Je donne mon avis</h5>
+            <div class="ol-img">
+              <ol>
+                <li>Pour rassurer les prochains acheteurs</li>
+                <li>Pour avoir une bonne réputation</li>
+                <li>Pour améliorer votre site</li>
+                <li>Pour améliorer les échanges entres acheteurs/vendeurs</li>
+              </ol>
+              <img src="images/give_review.svg" alt="Bonhomme qui écrit" />
+            </div>
+          </article>
+          <article>
+            <h5>Qui payes les frais ?</h5>
+            <div class="ol-img">
+              <ol>
+                <li>Prix de vente du billet 30€</li>
+                <li>Le vendeur reçoit 29€</li>
+                <li>L'acheteur paye 31€</li>
+                <li>Troc des Trains reçoit 2€</li>
+              </ol>
+              <img src="images/fees.svg" alt="Bonhomme avec un chèque" />
+            </div>
+          </article>
+        </div>
       </section>
 
       <div class="review">

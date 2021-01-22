@@ -86,6 +86,9 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+
+}
+* {
   box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -194,6 +197,10 @@ h5 {
 h6 {
   text-align: center;
   font-size: 14px;
+}
+
+.review-img-infos h6 {
+  text-align: unset;
 }
 
 /************************* li */
@@ -308,7 +315,7 @@ input:not(:placeholder-shown) ~ label {
 }
 
 .bottom-champ {
-  margin: 10px 0px 0px 0px;
+  margin-top: 10px;
 }
 
 .gare-date img {
@@ -348,9 +355,14 @@ input:not(:placeholder-shown) ~ label {
   font-family: "Raleway-extrabold";
   font-size: 14px;
 }
+
 .submit-sell {
   margin: 10px 0px 15px 0px;
   background-color: #fff;
+}
+
+.arrow-open {
+  display: none;
 }
 
 /************************* SECTION GOOD PLANS / WEEKEND */
@@ -504,7 +516,13 @@ input:not(:placeholder-shown) ~ label {
   margin-bottom: 15px;
 }
 
-.works article {
+.works-group-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.works-group-article article {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -512,6 +530,7 @@ input:not(:placeholder-shown) ~ label {
   margin: 0px 10px;
   margin-bottom: 15px;
   padding: 0px 30px;
+  width: 100%;
 }
 
 .ol-img {
@@ -621,7 +640,7 @@ ol::before {
   justify-content: flex-end;
   font-size: 12px;
   font-style: italic;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 /************************* Div */
@@ -765,6 +784,9 @@ footer {
     margin: 0px 10px 0px 0px;
   }
 
+  .bottom-champ {
+    margin: 0px;
+  }
   .date {
     width: 242px;
     display: flex;
@@ -793,6 +815,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+  .gp-article-group article,
+  .wk-article-group article {
+    margin: 10px;
   }
 
   .works article {
@@ -907,7 +933,7 @@ footer {
   }
 
   .footer-no-paiement {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .enterprise-infos {
@@ -947,13 +973,119 @@ footer {
 @media (min-width: 800px) {
 
   header {
-    background-image: linear-gradient(
+    background:rgba(0, 0, 0, 0.1);
+    box-shadow: unset;
+  }
+
+  nav {
+    display: flex;
+  }
+  
+  blockquote {
+    position: relative;
+    top: 25px;
+    color: #fff;
+  }
+
+  .sell-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #111111;
+    font-family: "Raleway-bold";
+    background-color: #fcd924;
+    border-radius: 8px;
+    width: 158px;
+    height: 40px;
+  }
+
+  .welcome-research {
+    position: relative;
+  }
+
+  .welcome-research::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -165px;
+    left: -20px;
+    width: 100vw;
+    height: 447px;
+    background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0)
     ),
-    url("images/aix-en-provence.webp");
+    center center / cover url("images/aix-en-provence.webp");
+  }  
+  
+  .arrow-open {
+    display: flex;
+  }
 
+  .form {
+    position: relative;
+    top: 180px;
+    height: 143px;
+    max-width: 780px;
+    margin: 0px auto;
+  }
+
+  .gare-date {
+    justify-content: center;
+  }
+
+  .gare input {
+    width: 150px;
+  }
+
+  .input-arrival-gare {
+    margin-right: 50px;
+  }
+
+  .date input {
+    width: 130px;
+  }
+
+  .submit-form {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .submit-search {
+    margin-right: 200px;
+  }
+
+  .submit-sell {
+    display: none;
+  }
+
+  .good-plans {
+    margin-top: 220px;
+  }
+
+  .works {
+    margin: 0px -20px 42px -20px;
+    border-radius: unset;
+  }
+
+  .works-group-article article {
+    width: 549px;
+  }
+
+  .review-img-infos h6, .review-comment-date p {
+    font-size: 16px;
+  }
+
+  .review-article-group {
+    justify-content: center;
+  }
+  .review-article-group article {
+    width: 380px;
+    height: 235px;
+    margin: 7px;
   }
 
 }
