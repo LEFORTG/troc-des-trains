@@ -187,7 +187,8 @@ h4 {
   font-size: 24px;
 }
 
-h5 {
+.works-group-article article h4 , 
+.footer-no-paiement h4 {
   font-family: "Raleway-bold";
   text-align: center;
   margin: 13px 0px;
@@ -829,7 +830,8 @@ footer {
     font-size: 30px;
   }
 
-  h5 {
+  .works-group-article article h4, 
+  .footer-no-paiement h4  {
     font-size: 20px;
   }
 
@@ -898,7 +900,7 @@ footer {
     margin: 0px;
   }
 
-  .footer-article h5 {
+  .footer-article h4 {
     text-align: inherit;
   }
 
