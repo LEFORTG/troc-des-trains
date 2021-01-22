@@ -182,7 +182,8 @@ h3 {
   margin-bottom: 42px;
 }
 
-h4 {
+.works-group-article article h4 , 
+.footer-no-paiement h4 {
   font-family: "Raleway-bold";
   font-size: 24px;
 }
@@ -195,14 +196,15 @@ h4 {
   font-size: 16px;
 }
 
-h5 {
+.paiement h4 {
   text-align: center;
   font-size: 14px;
 }
 
-.review-img-infos h5 {
+.review-img-infos h4 {
   text-align: unset;
 }
+
 
 /************************* li */
 
@@ -224,6 +226,10 @@ header {
 
 h1 img {
   width: 140px;
+}
+
+.blockquote {
+  display: none;
 }
 
 /************************* Navigation */
@@ -665,7 +671,7 @@ footer {
   background-color: rgba(252, 217, 36, 0.5);
 }
 
-.paiement h5 {
+.paiement h4 {
   font-size: 12px;
 }
 
@@ -737,7 +743,14 @@ footer {
   }
 
   blockquote {
+    display: none;
+  }
+
+  .blockquote {
+    display: flex;
+    justify-content: center;
     font-size: 35px;
+    font-family: "Raleway-bold";
   }
 
   .form {
@@ -882,7 +895,7 @@ footer {
     margin-bottom: 42px;
   }
 
-  .paiement h5 {
+  .paiement h4 {
     font-size: 16px;
   }
 
@@ -983,7 +996,7 @@ footer {
     display: flex;
   }
   
-  blockquote {
+  .blockquote {
     position: relative;
     top: 25px;
     color: #f3f3f3;
@@ -1077,7 +1090,7 @@ footer {
     width: 549px;
   }
 
-  .review-img-infos h5, .review-comment-date p {
+  .review-img-infos h4, .review-comment-date p {
     font-size: 16px;
   }
 
