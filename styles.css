@@ -86,11 +86,10 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-
-}
-* {
   box-sizing: border-box;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -987,6 +986,9 @@ footer {
 
 @media (min-width: 800px) {
 
+  main {
+    padding: 0px;
+  }
   header {
     background:rgba(0, 0, 0, 0.1);
     box-shadow: unset;
