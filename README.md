@@ -14,6 +14,8 @@ J'ai eu un peu de mal encore avec les flex box surtout sur la fin de la semaine,
 Dans mon css, j'ai utilise des p:first-child ou p:last-child par exemple. Sauf erreur de lecture, je n'ai jamais utilisé plus de 3 sélecteurs. 
 Pour le footer j'ai utilisé des order. 
 
+Hier j'avais un lighthouse parfait de 100 partout avec les confettis et aujourd'hui impossible d'avoir le 100 en performance
+
 PS : Si tu trouves le problème de mon scroll horizontal, je voudrais bien avoir la solution.
 
 J'ai passé beaucoup de plaisir cette semaine sur ce projet, j'espère qu'il te plaira. 
