@@ -89,7 +89,6 @@ video {
   box-sizing: border-box;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -181,7 +180,7 @@ h3 {
   margin-bottom: 42px;
 }
 
-.works-group-article article h4 , 
+.works-group-article article h4,
 .footer-no-paiement h4,
 .gp-hfour-p h4,
 .wk-hfour-p h4 {
@@ -189,7 +188,7 @@ h3 {
   font-size: 24px;
 }
 
-.works-group-article article h4 , 
+.works-group-article article h4,
 .footer-no-paiement h4 {
   font-family: "Raleway-bold";
   text-align: center;
@@ -206,7 +205,6 @@ h3 {
   text-align: unset;
 }
 
-
 /************************* li */
 
 li {
@@ -220,8 +218,8 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 56px;
-  box-shadow: 0px 4px 4px lightgrey;
   background-color: white;
+  box-shadow: 0px 4px 4px lightgrey;
 }
 
 h1 img {
@@ -238,7 +236,6 @@ h1 img {
 .eye {
   display: none;
 }
-
 
 .shopping-basket,
 .eye {
@@ -265,10 +262,10 @@ strong {
 /************************* Bloquote */
 
 blockquote {
-  font-family: "Raleway-bold";
-  font-size: 18px;
   text-align: center;
   margin-top: 65px;
+  font-size: 18px;
+  font-family: "Raleway-bold";
 }
 
 /************************* Form */
@@ -276,9 +273,9 @@ blockquote {
 .form {
   margin: 42px 0px;
   padding: 15px 10px;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 4px lightgrey;
-  background-color: white;
 }
 
 .gare-date {
@@ -365,7 +362,8 @@ input:not(:placeholder-shown) ~ label {
 }
 
 .submit-sell {
-  margin: 10px 0px 15px 0px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   background-color: #fff;
 }
 
@@ -389,10 +387,10 @@ input:not(:placeholder-shown) ~ label {
   flex-direction: column;
   width: 280px;
   height: 280px;
-  border-radius: 8px;
-  border: none;
   margin-bottom: 15px;
   padding: 10px 13px;
+  border-radius: 8px;
+  border: none;
   box-shadow: 0px 4px 4px lightgray;
 }
 
@@ -408,15 +406,6 @@ input:not(:placeholder-shown) ~ label {
 }
 
 /************************* Articles */
-
-.gp-article-one,
-.gp-article-two,
-.gp-article-four,
-.wk-article-one,
-.wk-article-three,
-.wk-article-four {
-  overflow: hidden;
-}
 
 .gp-article-one {
   background-image: linear-gradient(
@@ -442,7 +431,7 @@ input:not(:placeholder-shown) ~ label {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0)
     ),
-    url("images/nantes_good_plans.webp");
+    url("images/nantes-good-plans.webp");
 }
 
 .gp-article-four {
@@ -506,7 +495,7 @@ input:not(:placeholder-shown) ~ label {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0)
     ),
-    url("images/nantes_weekend.webp");
+    url("images/nantes-weekend.webp");
 }
 
 /************************* SECTION WORK */
@@ -516,8 +505,8 @@ input:not(:placeholder-shown) ~ label {
   flex-direction: column;
   border-radius: 8px;
   padding: 15px 10px;
-  background-color: rgba(252, 217, 36, 0.5);
   margin-bottom: 42px;
+  background-color: rgba(252, 217, 36, 0.5);
 }
 
 .works h2 {
@@ -533,12 +522,12 @@ input:not(:placeholder-shown) ~ label {
 .works-group-article article {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  background-color: #fff;
+  width: 100%;
   margin: 0px 10px;
   margin-bottom: 15px;
   padding: 0px 30px;
-  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
 .ol-img {
@@ -576,11 +565,11 @@ ol::before {
 .ol-img li::before {
   content: "";
   display: block;
-  background: #fcd924;
   position: absolute;
   left: -20px;
   width: 15px;
   height: 15px;
+  background: #fcd924;
   border-radius: 50%;
 }
 
@@ -732,6 +721,17 @@ footer {
   font-size: 12px;
 }
 
+/*************************************************** Animations */
+
+.anim-button:hover,
+.anim-article-gp:hover,
+.anim-article-wk:hover,
+.anim-media a img:hover,
+.anim-dl :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /**************************************************************************** @MEDIA-QUERIES */
 
 @media (min-width: 650px) {
@@ -761,6 +761,11 @@ footer {
   .gare {
     display: flex;
     align-items: end;
+  }
+
+  .champ input,
+  .submit-form input {
+    border-radius: 8px;
   }
 
   .swap-button-mobile {
@@ -844,8 +849,8 @@ footer {
     font-size: 30px;
   }
 
-  .works-group-article article h4, 
-  .footer-no-paiement h4  {
+  .works-group-article article h4,
+  .footer-no-paiement h4 {
     font-size: 20px;
   }
 
@@ -987,19 +992,18 @@ footer {
 }
 
 @media (min-width: 800px) {
-
   main {
     padding: 0px;
   }
   header {
-    background:rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     box-shadow: unset;
   }
 
   nav {
     display: flex;
   }
-  
+
   .blockquote {
     position: relative;
     top: 25px;
@@ -1032,14 +1036,10 @@ footer {
     left: -20px;
     width: 100vw;
     height: 447px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)
-    ),
-    center center / cover url("images/aix-en-provence.webp");
-  }  
-  
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      center center / cover url("images/aix-en-provence.webp");
+  }
+
   .arrow-open {
     display: flex;
   }
@@ -1094,7 +1094,8 @@ footer {
     width: 549px;
   }
 
-  .review-img-infos h4, .review-comment-date p {
+  .review-img-infos h4,
+  .review-comment-date p {
     font-size: 16px;
   }
 
@@ -1106,5 +1107,4 @@ footer {
     height: 235px;
     margin: 7px;
   }
-
 }
